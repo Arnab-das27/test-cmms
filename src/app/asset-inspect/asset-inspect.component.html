@@ -1,0 +1,72 @@
+<mat-icon mat-dialog-close style="margin-left: 95%;margin-top: -20px;font-size: 18px;"  aria-hidden="false" aria-label="Example home icon" cursor="pointer" title="Close">close</mat-icon>
+
+<mat-dialog-content class="material_content">
+  <div class="container-fluid container_fluid">
+
+    <div class="row text-center">
+      <span class="text_heading">
+        Asset Inspection frequency setup
+      </span>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <h3>Name of the Assest</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field>
+          <input matInput placeholder="First Inspection On ">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-auto">
+       <span>Repeat every
+        <mat-form-field class="input_box">
+          <input matInput >
+        </mat-form-field>
+
+        <button class="button_week" mat-button [matMenuTriggerFor]="menu">
+          Week &#9660;
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Days</button>
+          <button mat-menu-item>Month</button>
+        </mat-menu>
+        </span>
+      </div>
+
+      <div class="col-auto">
+        <span>
+        for
+        <mat-form-field class="input_box">
+         <input matInput >
+       </mat-form-field>
+       times.</span>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-4" >
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3>Scheduled Dates</h3>
+        <div class="list_of_date">
+          <p>25-07-2021</p>
+          <p>25-07-2021</p>
+          <p>25-07-2021</p>
+          <p>25-07-2021</p>
+          <p>25-07-2021</p>
+        </div>
+
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 align-self-end text-end">
+        <button class="button_done">Done</button>
+      </div>
+    </div>
+
+  </div>
+
+</mat-dialog-content>

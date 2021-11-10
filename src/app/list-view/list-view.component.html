@@ -1,0 +1,68 @@
+<div class="container-fluid" style="margin-top:-36px;padding: 0%;">
+<div class="row" style="background: rgba(45, 132, 138, 1);padding: 5px;">
+  <div class="col">
+    <!-- <span type="button" >
+      <mat-icon aria-hidden="false" aria-label="material-icons-two-tone">
+        menu
+      </mat-icon>
+    </span> -->
+    <span class="item_name">Vehicle Assets List</span>
+    <u class="item_underline" style="color: #ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+    <img src="../../assets/image/filter_2 1.png" style="height: 40px;"/>
+  </div>
+  <div class="col align-self-center text-center">
+    <input type="text" style="padding: 5px;padding-left: 15px; width: 35%; border-radius: 10px;border: 3px solid rgba(45, 132, 138, 1);background: rgba(245, 255, 255, 0.7);" placeholder="Search Here..."/>
+  </div>
+</div>
+
+  <div class="row" style="background-color: #88ABAD;height: 40px;">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col text-end">
+      <button style="background: linear-gradient(180deg, #8CC9CD 0%, rgba(27, 26, 22, 0) 100%);
+      border: 1px solid #C6F0E9;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      padding: 10px 20px 10px 20px;
+      color: #F1FCFF;
+      margin-top: -100px !important;
+      margin-right: 10px;
+
+      ">Add new Vehicle</button>
+    </div>
+  </div>
+
+    <div style="max-height: 480px;overflow-x: hidden;">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="name" >
+          <th mat-header-cell *matHeaderCellDef > Asset Name. </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef  style="background: rgba(3, 43, 46, 0.55);"> Date Of Purchase </th>
+          <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="registration_no">
+          <th mat-header-cell *matHeaderCellDef >  Registration No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.registration_no}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="details">
+          <th mat-header-cell *matHeaderCellDef style="background: rgba(3, 43, 46, 0.55);"> Details of Asset </th>
+          <td mat-cell *matCellDef="let element"> {{element.details}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns sticky: true" style="background: rgba(0, 55, 59, 0.7);"></tr>
+
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" style="text-align: center;background: rgba(224, 241, 242, 0.94);border: 3px solid #ffffff;
+        "></tr>
+
+      </table>
+    </div>
+
+</div>

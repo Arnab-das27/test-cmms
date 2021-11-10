@@ -1,0 +1,152 @@
+<mat-icon mat-dialog-close style="margin-left: 95%;margin-top: -20px;font-size: 16px;"  aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+
+<mat-dialog-content class="material_content">
+
+<div class="container-fluid container_fluid">
+  <div class="row text-center">
+    <span class="text_heading">
+      Asset Inspection Report
+    </span>
+  </div>
+
+  <div class="row mt-3" >
+    <div class="col" style="padding: 10px 20px 10px 20px;">
+        <p style="color: #155B6A;">Assest name</p>
+        <mat-form-field>
+          <mat-label>Inspection date</mat-label>
+          <input matInput type="date">
+        </mat-form-field>
+
+    </div>
+    <div class="col align-self-center" style="padding: 10px 20px 10px 20px;">
+      <textarea class="input_box_big"  placeholder="Insp. Details"></textarea>
+    </div>
+
+  </div>
+
+  <div class="row mt-3" style="border: 1px solid #29A8A8;padding: 10px 10px 20px 10px;">
+    <div class="col" style="padding: 10px 20px 10px 20px;">
+      <mat-form-field style="width: 100%;">
+        <mat-label>Visual Inspection</mat-label>
+        <mat-select >
+          <mat-option value="one" >No Anomally</mat-option>
+          <mat-option value="two">Some Problem</mat-option>
+          <mat-option value="two">Partly damaged</mat-option>
+          <mat-option value="two">Repair needed</mat-option>
+          <mat-option value="two">Missing</mat-option>
+          <mat-option value="two">Painting needed</mat-option>
+          <mat-option value="two">Others</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <textarea class="input_box_big"  placeholder="Performance test report"></textarea>
+
+    </div>
+    <div class="col align-self-center" style="padding: 10px 20px 10px 20px;">
+
+      <mat-form-field style="width: 100%;">
+        <mat-label>Performance Test:</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <textarea class="input_box_big"  placeholder="Any other note"></textarea>
+    </div>
+
+  </div>
+
+  <div class="row div_document_attachment">
+    <div class="col-auto align-self-center">
+      <button mat-raised-button class="button_document_attach" >Document attachment <img src="../assets/image/attactchment 1.png" style="height: 25px;" /></button>
+    </div>
+    <div class="col-auto">
+        <table>
+          <tr>
+            <div class="image_div">
+
+              <td style="padding: 0px 2px 0px 2px;">
+                <img src="../assets/image/Rectangle 565.png" style="height: 50px;"/>
+                <img src="../assets/image/cross rect 19 1.png" style="height: 12px;width: 12px;margin-top: -38px;margin-left: -13px;"/>
+                <p style="color: #155B6A;text-align: center;font-size: 8px;">Attachment Name</p>
+              </td>
+              <td style="padding: 0px 2px 0px 2px;">
+                <img src="../assets/image/Rectangle 565.png" style="height: 50px;"/>
+                <img src="../assets/image/cross rect 19 1.png" style="height: 12px;width: 12px;margin-top: -38px;margin-left: -13px;"/>
+                <p style="color: #155B6A;text-align: center;font-size: 8px;">Attachment Name</p>
+              </td>
+              <td style="padding: 0px 2px 0px 2px;">
+                <img src="../assets/image/Rectangle 565.png" style="height: 50px;"/>
+                <img src="../assets/image/cross rect 19 1.png" style="height: 12px;width: 12px;margin-top: -38px;margin-left: -13px;"/>
+                <p style="color: #155B6A;text-align: center;font-size: 8px;">Attachment Name Attachment Name</p>
+              </td>
+              <td style="padding: 0px 2px 0px 2px;">
+                <img src="../assets/image/Rectangle 565.png" style="height: 50px;"/>
+                <img src="../assets/image/cross rect 19 1.png" style="height: 12px;width: 12px;margin-top: -38px;margin-left: -13px;"/>
+                <p style="color: #155B6A;text-align: center;font-size: 8px;">Attachment Name</p>
+              </td>
+
+              <td style="padding: 0px 2px 0px 2px;">
+                <img src="../assets/image/Rectangle 565.png" style="height: 50px;"/>
+                <img src="../assets/image/cross rect 19 1.png" style="height: 12px;width: 12px;margin-top: -38px;margin-left: -13px;"/>
+                <p style="color: #155B6A;text-align: center;font-size: 8px;">Attachment Name</p>
+              </td>
+
+
+            </div>
+
+          </tr>
+        </table>
+    </div>
+  </div>
+
+  <div class="row mt-3 mb-3">
+    <div class="col">
+      <div class="example-container mat-elevation-z8 material_table">
+        <table mat-table [dataSource]="dataSource">
+
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> Insp Dt </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Done By </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef> Visual Only Selected </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef> Performance </th>
+            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="row mb-3">
+    <div class="col text-center">
+      <button mat-raised-button class="button_submit">SUBMIT</button>
+    </div>
+  </div>
+
+</div>
+
+
+</mat-dialog-content>

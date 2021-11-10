@@ -1,0 +1,137 @@
+::ng-deep .asset_report .mat-dialog-container{
+  background: linear-gradient(180deg, #DDE6E7 0%, #FFFFF8 100%);
+  box-shadow: 0px 4px 20px 11px rgba(0, 0, 0, 0.25);
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+::ng-deep .asset_report .mat-dialog-content{
+  max-height: 80vh;
+}
+
+::ng-deep .asset_report tr.mat-header-row,tr.mat-row, tr.mat-footer-row{
+  height: 35px !important;
+}
+.example-container {
+  height: 200px;
+  overflow: auto;
+}
+.text_heading{
+  letter-spacing: 0.35em;color: #0F6767;font-size: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+
+.input_box_big{
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: #F9FFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  /* text-align: center; */
+  width: 100%;
+
+}
+/* ::ng-deep .asset_report .mat-select-panel{
+  background: linear-gradient(180deg, rgba(238, 253, 254, 0.96) 0%, rgba(252, 254, 255, 0.96) 53.39%, rgba(255, 255, 255, 0.96) 70.58%, rgba(255, 253, 210, 0.96) 99.93%);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+} */
+
+/* Start -> This code for dropdown option*/
+::ng-deep .mat-select-panel{
+  background: linear-gradient(180deg, rgba(238, 253, 254, 0.96) 0%, rgba(252, 254, 255, 0.96) 53.39%, rgba(255, 255, 255, 0.96) 70.58%, rgba(255, 253, 210, 0.96) 99.93%);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+/*End -> This code for dropdown option*/
+
+
+::ng-deep .mat-option-text :hover{
+  background: red;
+}
+.button_document_attach{
+  background: rgba(187, 210, 207, 0.8);
+  border: 1px solid #305865;
+  box-sizing: border-box;
+  border-radius:10px;
+  padding: 5px;
+  padding-left: 20px;
+  text-align: center;
+  outline: none;
+  color:#155B6A;
+}
+.image_div{
+  width: 250px;
+  overflow-y: hidden;
+  padding-top: 20px;
+}
+.material_table{
+  border: 1px solid #6D741C;
+  padding: 0%;
+}
+::ng-deep.material_table th.mat-header-cell{
+  color: #1E1D02;
+  /* border: 1px solid #6D741C ; */
+  width: 25%;
+  text-align: center;
+  background: #FBF8AA;
+  height: 50px;
+  padding: 0%;
+  font-size: 12px;
+
+}
+
+
+::ng-deep.material_table th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
+  padding: 0%;
+  text-align: center;
+  padding: 0%;
+  font-size: 12px;
+
+}
+
+.button_submit{
+  background: #469C9C;
+  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.56);
+  border-radius: 10px;outline:none;
+  width: 150px;height: 40px;
+  color: #ffffff;border: none;
+  padding-top: 5px;
+}
+@media (max-width:600px)
+{
+  ::ng-deep .cdk-overlay-pane {
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+  }
+
+
+  ::ng-deep .asset_report .mat-dialog-content{
+    max-height: 100vh;
+  }
+  .text_heading{
+    line-height: 30px;
+  }
+
+  .image_div{
+    width: 285px;
+  }
+
+  .material_table{
+    width: 80vw;
+  }
+  .div_document_attachment{
+    margin-top: 10px;
+  }
+  .div_document_attachment button{
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
+}

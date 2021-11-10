@@ -1,0 +1,96 @@
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  height: 70px;
+  width: 200px;border-radius: 10px;
+  background: #FAFCFC;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ::ng-deep .mat-dialog-container {
+  padding: 0%;
+  margin: 0%;
+} */
+
+
+.input_box_big{
+  padding-top: 5px;
+  padding-left: 5px;
+  outline: none;
+  border: none;
+  background: #F9FFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+
+}
+.page_heading span{
+  letter-spacing: 0.35em;
+  color: #0F6767;
+  font-size: 20px;
+}
+.use_for_mobile_view{
+padding: 20px;
+}
+
+.button_document_attach{
+  background: rgba(83, 116, 116, 0.8);
+  border: 3px solid #EFFBFF;
+  box-sizing: border-box;
+  border-radius:10px;
+  padding: 5px;
+  padding-left: 20px;
+  text-align: center;
+  outline: none;
+  color:#EAF2F4;
+}
+
+.image_div{
+  width: 300px;
+  overflow-y: hidden;
+}
+.fifth_div{
+  padding: 20px;
+}
+.button_submit{
+  background: #469C9C;
+  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.56);
+  border-radius: 10px;outline:none;
+  width: 150px;height: 40px;
+  color: #ffffff;border: none;
+}
+@media (max-width:600px)
+{
+  .fifth_div{
+    margin-bottom: 15px;
+    padding: 0px;
+    margin-top: 10px;
+
+  }
+  .use_for_mobile_view{
+    overflow: scroll;
+    max-height: 600px;
+    overflow-x: hidden;
+    padding-left: 35px;
+  }
+  ::ng-deep .cdk-overlay-pane {
+    max-width: 100vw !important;
+  }
+
+  .image_div{
+    margin-top: 10px;
+  }
+  .text_submitted_by{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px !important;
+    padding: 0px;
+
+  }
+  .button_submit{
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .image_div{
+    width: 250px;
+    overflow-y: hidden;
+  }
+
+}

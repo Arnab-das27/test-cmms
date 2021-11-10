@@ -1,0 +1,31 @@
+table {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+/* ::ng-deep .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding: 0%;
+
+} */
+::ng-deep th.mat-header-cell{
+  text-align: center !important;
+  color: #ffffff;
+  font-size: 14px;
+
+}
+.item_name{
+  display: inline;
+  color: #FFFFFF;
+  font-size:20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 50px;
+  letter-spacing: 0.35em;
+}
+@media  (max-width:600px) {
+  .item_name{
+    font-size: 14px;
+  }
+  .item_underline{
+    display: none;
+  }
+}

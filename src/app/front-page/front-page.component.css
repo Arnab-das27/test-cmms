@@ -1,0 +1,214 @@
+.container_fluid {
+    background: linear-gradient(180deg, #1F5C60 5.22%, rgba(255, 255, 255, 0) 100%);
+    /* border: 1px solid #70BCBC; */
+    margin: 0%;
+    padding: 0%;
+}
+
+.company_logo {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+}
+
+.icon_user,
+.icon_notification,
+.icon_chat {
+    height: 20px;
+    width: 20px;
+}
+
+.icon_profile {
+    height: 30px;
+    width: 40px;
+}
+
+.icon_circle {
+    height: 15px;
+    width: 15px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.profile_name {
+    color: #FFFFFF;
+}
+
+.col_owl_cmms {
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.text_owl {
+    font-size: 60px;
+    color: #FAEC68;
+}
+
+.text_cmms {
+    font-size: 60px;
+    color: #F8FFFF;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.row_for_circle {
+    margin: 0%;
+}
+
+.div_circle1 {
+    height: 130px;
+    width: 130px !important;
+    border-radius: 100%;
+    background: rgba(248, 112, 112, 0.85);
+}
+
+.div_circle2 {
+    height: 130px;
+    width: 130px !important;
+    border-radius: 100%;
+    background: rgba(148, 148, 150, 10.85);
+    margin-left: -100px;
+    margin-top: 10px;
+}
+
+.div_welcome_box {
+    background: rgba(84, 108, 169, 0.23);
+    padding: 6% 0% 8% 0%;
+    width: auto;
+}
+
+.paragraph_welcome {
+    margin-left: 4%;
+    /* color: rgba(31, 92, 96, 0.85); */
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.color_div1 {
+    background: rgba(31, 92, 96, 0.85);
+    height: 30px;
+    width: 80%;
+    border-radius: 0px 10px 10px 0px;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.color_div2 {
+    background: rgba(248, 112, 112, 0.85);
+    height: 30px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.color_div3 {
+    background: rgba(148, 148, 150, 10.85);
+    height: 30px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 0px 10px 10px 0px;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.col_for_button {
+    padding-top: 8%;
+}
+
+.button_management {
+    box-shadow: 0px 4px 13px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 50px;
+    padding: 0px 17px 0px 17px;
+    color: #FFFFFF;
+    width: 140px;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+}
+
+.footer_art {
+    padding: 0px 1px 0px 1px;
+    height: 31.5vh;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .company_logo {
+        height: 35px;
+        width: 35px;
+        margin: 2px;
+    }
+    .icon_user,
+    .icon_notification,
+    .icon_chat {
+        height: 15px;
+        width: 15px;
+    }
+    .icon_profile {
+        height: 25px;
+        width: 35px;
+    }
+    .icon_circle {
+        height: 10px;
+        width: 10px;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .profile_name {
+        display: none;
+    }
+    .text_owl {
+        font-size: 50px;
+        margin-left: -40px;
+    }
+    .text_cmms {
+        font-size: 45px;
+        margin-left: -3px;
+        margin-top: 0px;
+    }
+    .row_for_circle {
+        margin: 0%;
+        margin-top: 10px;
+    }
+    .div_circle1 {
+        height: 80px;
+        width: 80px !important;
+    }
+    .div_circle2 {
+        height: 80px;
+        width: 80px !important;
+        margin-left: -67px;
+        margin-top: 10px;
+    }
+    .div_welcome_box {
+        background: rgba(84, 108, 169, 0.23);
+        padding: 3% 0% 4% 0%;
+        width: auto;
+    }
+    .paragraph_welcome {
+        margin-left: 4%;
+        /* color: rgba(31, 92, 96, 0.85); */
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    .col_for_button {
+        padding-top: 5px;
+        padding-left: 40px;
+    }
+    .button_management {
+        font-size: 13px;
+        width: 120px;
+        margin-top: 15px;
+    }
+    .footer_art {
+        margin-top: -9px;
+        height: 16.5vh;
+        /* position: fixed; */
+    }
+}

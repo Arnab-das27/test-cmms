@@ -1,0 +1,50 @@
+
+
+::ng-deep .mat-expansion-panel-body{
+  /* background: rgba(166, 221, 212,0.05); */
+  padding-top: 15px 0px 0px 0px;
+  margin-left: 5px;
+  color: #ffffff;
+
+}
+::ng-deep .mat-expansion-panel-body :hover{
+  border: 2px solid rgba(45, 132, 138, 0.85);
+  padding: 0%;
+  margin: 0%;
+}
+
+::ng-deep .mat-expansion-panel {
+  background: none !important;
+}
+
+::ng-deep .mat-expansion-panel-header, .mat-expansion-panel-header.mat-expanded{
+  height: 40px;
+}
+
+
+.example-sidenav{
+  background: linear-gradient(180deg, rgba(14, 45, 47, 0.85) 37.5%, rgba(45, 132, 138, 0.85) 86.46%);
+  width: 30vh;
+  /* border-top: 1px solid #fff; */
+}
+.side_nav_heading{
+  font-size: 20px;
+  color:#ffffff;
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+}
+.sidebar_list{
+  background: linear-gradient(180deg, #E6DB7D 18.23%, #F5F6F7 100%) !important;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 10px;
+}
+.materail_expansion_panel{
+  border:none;box-shadow: none;
+}
+
+@media (max-width:400px){
+  .example-sidenav{
+    width: 23vh;
+  }
+}
